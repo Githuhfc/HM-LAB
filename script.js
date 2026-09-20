@@ -41,4 +41,21 @@ if (statusButton && labStatus) {
 
     });
 
+}const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm && formStatus) {
+
+    contactForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        formStatus.textContent =
+            "MESSAGE READY — CONNECT A FORM SERVICE TO TRANSMIT.";
+
+        contactForm.reset();
+
+    });
+
 }
+
