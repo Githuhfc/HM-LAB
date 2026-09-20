@@ -98,7 +98,7 @@
             </div>
 
 
-            <form id="contactForm">
+            <form id="contactForm" name="contact" method="POST" data-netlify="true"></form>
 
                 <label for="name">
                     NAME
@@ -134,6 +134,13 @@
                     placeholder="Tell me about the idea..."
                     required
                 ></textarea>
+                <input
+    type="text"
+    name="website"
+    autocomplete="off"
+    tabindex="-1"
+    class="honeypot"
+>
 
 
                 <button type="submit">
